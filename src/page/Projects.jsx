@@ -8,7 +8,7 @@ export const projects = [
   {
     id: 1,
     title: "AI Fake News & Deepfake Detection",
-    image: "/projects/fakenews.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcuLSciQ9KKaMk_wktrDtNtm51I2fBe-FOYoq_JmaA2A&s=10",
     description:
       "AI-powered platform that detects fake news, deepfake images, and videos using NLP models, computer vision, and fact-checking APIs.",
     tech: [
@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 2,
     title: "CropFix AI",
-    image: "/projects/cropfix.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_Df39Ilivgfiqw15Wbi-2EEut-dkVmpLkDANZRwqkw&s=10",
     description:
       "Smart agriculture platform that identifies crop diseases and provides AI-generated recommendations to farmers.",
     tech: [
@@ -39,7 +39,7 @@ export const projects = [
   {
     id: 3,
     title: "E-Commerce Platform",
-    image: "/projects/ecommerce.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLmdhcCRKrJ_ekhHy1KVxpTIIh29fwazVUWa72ckW0w&s=10",
     description:
       "Modern online shopping platform with authentication, product management, shopping cart, and responsive UI.",
     tech: [
@@ -53,7 +53,7 @@ export const projects = [
   {
     id: 4,
     title: "Expense Tracker",
-    image: "/projects/expense.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlA-2R2yV8q6AqyHuGFjX37cwo3g7f64OlSkz3wTY9ww&s=10",
     description:
       "Personal finance application to manage income, expenses, and spending analysis with clean visual reports.",
     tech: [

@@ -1,5 +1,5 @@
 import React from "react";
-
+import PortfolioImg from "../assets/potfolioimg.png";
 export const About = () => {
   return (
     <section
@@ -11,8 +11,8 @@ export const About = () => {
         {/* Left Side - Image */}
         <div className="flex justify-center">
           <img
-            src="/profile.jpg"
-            alt="Shubham Sawant"
+                  src={PortfolioImg}
+            alt="Pushkar Sawant"
             className="w-80 h-80 object-cover rounded-full shadow-2xl border-4 border-blue-500"
           />
         </div>
@@ -24,7 +24,7 @@ export const About = () => {
           </h4>
 
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            I'm Shubham Sawant
+            I'm Pushkar Sawant
           </h2>
 
           <p className="text-gray-600 leading-relaxed mb-4">

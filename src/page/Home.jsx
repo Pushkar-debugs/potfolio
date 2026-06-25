@@ -1,4 +1,5 @@
 import React from "react";
+import PortfolioImg from "../assets/potfolioimg.png";
 import {
   FaGithub,
   FaLinkedin,
@@ -96,8 +97,8 @@ const Home = () => {
               <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
 
               <img
-                src="/profile.png"
-                alt="Shubham Sawant"
+               src={PortfolioImg}
+                alt="Pushkar Sawant"
                 className="relative w-80 h-80 md:w-[450px] md:h-[450px] object-cover rounded-full border-4 border-blue-500 shadow-2xl"
               />
             </div>
