@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./page/navbar";
 import Footer from "./page/Footer";
+import "./styles.css";
 
 const Home = lazy(() => import("./page/Home"));
 const About = lazy(() => import("./page/About"));
@@ -20,7 +21,12 @@ function App() {
         <Suspense
           fallback={
             <div className="min-h-screen flex items-center justify-center text-white">
-              Loading portfolio...
+              <div className="text-center">
+                <div className="animate-spin mb-4">
+                  <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full"></div>
+                </div>
+                <p className="text-lg">Loading portfolio...</p>
+              </div>
             </div>
           }
         >
