@@ -1,88 +1,78 @@
 import React from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaArrowUp, FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300">
+    <footer className="bg-[#020617] text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16">
 
-        <div className="grid md:grid-cols-3 gap-10">
-
-          {/* Brand */}
+        <div className="footer-cta glass-effect-dark p-8 rounded-3xl flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Pushkar.dev
-            </h2>
+            <p className="text-sm uppercase tracking-[0.35em] text-blue-300">Ready to build together?</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-4">Let’s create a polished digital experience.</h2>
+          </div>
+          <Link to="/contact" className="btn-primary w-full lg:w-auto justify-center">
+            Message Me
+          </Link>
+        </div>
 
+        <div className="grid md:grid-cols-3 gap-10 mt-12">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">About</h3>
             <p className="text-gray-400 leading-relaxed">
-              Creating modern web applications and AI-powered
-              solutions with a focus on performance,
-              innovation, and user experience.
+              I design modern web applications with polished motion, accessible UI, and clean performance.
             </p>
           </div>
 
-          {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Services
-            </h3>
-
+            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              <li>Web Development</li>
-              <li>Frontend Design</li>
-              <li>Backend Development</li>
-              <li>AI/ML Solutions</li>
-              <li>API Integration</li>
+              <li>
+                <Link to="/about" className="text-gray-400 hover:text-white transition">About</Link>
+              </li>
+              <li>
+                <Link to="/skills" className="text-gray-400 hover:text-white transition">Skills</Link>
+              </li>
+              <li>
+                <Link to="/projects" className="text-gray-400 hover:text-white transition">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:text-white transition">Contact</Link>
+              </li>
             </ul>
           </div>
 
-          {/* Technologies */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Technologies
-            </h3>
-
-            <div className="flex flex-wrap gap-2">
-              {[
-                "React",
-                "JavaScript",
-                "Python",
-                "Django",
-                "Flask",
-                "Supabase",
-                "MySQL",
-                "TensorFlow",
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-gray-800 px-3 py-1 rounded-full text-sm"
-                >
-                  {tech}
-                </span>
-              ))}
+            <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
+            <div className="space-y-3 text-gray-400">
+              <a href="mailto:shubhamsawant2205@gmail.com" className="hover:text-white transition flex items-center gap-2">
+                <FaEnvelope /> shubhamsawant2205@gmail.com
+              </a>
+              <div className="flex gap-3 mt-4">
+                <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="social-icon text-gray-300 hover:text-white transition">
+                  <FaGithub />
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="social-icon text-gray-300 hover:text-white transition">
+                  <FaLinkedin />
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" rel="noreferrer" className="social-icon text-gray-300 hover:text-white transition">
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
           </div>
-
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-800 my-8"></div>
+        <div className="border-t border-white/10 my-10"></div>
 
-        {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-
-          <p className="text-gray-500 text-center">
-            © {new Date().getFullYear()} Shubham Sawant.
-            Built with React & Tailwind CSS.
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <p className="text-gray-500 text-sm">
+            © {new Date().getFullYear()} Shubham Sawant. Built with React & Tailwind CSS.
           </p>
-
-          <a
-            href="#home"
-            className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition"
-          >
-            <FaArrowUp className="text-white" />
+          <a href="#home" className="pulse-ring inline-flex items-center justify-center rounded-full bg-blue-500 p-3 text-white transition hover:bg-blue-400">
+            <FaArrowUp />
           </a>
-
         </div>
       </div>
     </footer>
